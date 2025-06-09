@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상견례 초대장</title>
+</head>
+<body style="margin-bottom: 10%;">
+  <div id="section1"></div>
+  <div id="section2"></div>
+  <div id="section3"></div>
+  <div id="section4"></div>
+
+
+  <script>
+    fetch('1.html').then(res => res.text()).then(data => {
+      document.getElementById('section1').innerHTML = data;
+    });
+
+    fetch('2.html').then(res => res.text()).then(data => {
+      document.getElementById('section2').innerHTML = data;
+    });
+
+    fetch('3.html').then(res => res.text()).then(data => {
+      document.getElementById('section3').innerHTML = data;
+    });
+
+    fetch('4.html').then(res => res.text()).then(data => {
+      document.getElementById('section4').innerHTML = data;
+    });
+  </script>
+</body>
+</html>
